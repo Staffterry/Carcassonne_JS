@@ -1,2 +1,2 @@
-CarcassonTM
+Carcassonne_JS
 ===========
