@@ -1,3 +1,59 @@
 <!DOCTYPE HTML>
 <html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #myCanvas {
+        border: 1px solid #9C9898;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="1200" height="600"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var images = [
+                     { src: "img/C.jpg",
+                       col: 2           },
+                     { src: "img/Cc+.jpg",
+                       col: 2           },
+                     { src: "img/Cc.1.jpg",
+                       col: 3           },
+                     { src: "img/L.jpg",
+                       col: 1           },
+                     { src: "img/CC.2.jpg",
+                       col: 1           },
+                     { src: "img/Ccc+.jpg",
+                       col: 1           },
+                     { src: "img/Ccc.jpg",
+                       col: 3           },
+                     { src: "img/Cccc+.jpg",
+                       col: 1           },
+                     { src: "img/CccR+.jpg",
+                       col: 1           },
+                     { src: "img/CccR.jpg",
+                       col: 2           }
+                   ];
+      var length2 = images.length;
+      var framez = new Array(length2);
+      for(var i = 0, j = 0, sum = 0; i < length2; i++, sum++) {
+          j = j || images[i].col;
+          
+          framez[i] = new Image();
+          framez[i].onload = (function(x,s) {
+                                  return function() {
+                                            context.drawImage(framez[x], 10+s%10*100, 10+(s/10|0)*100,100,100);
+                                  };
+                              })(i,sum);
+          framez[i].src = images[i].src;
+          j=j-1;
+          if(j > 0) --i;
+      }
+    </script>
+  </body>
 </html>
