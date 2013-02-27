@@ -1,3 +1,50 @@
 <!DOCTYPE HTML>
 <html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+  <script src="cardConfig.json"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #myCanvas {
+        border: 1px solid #9C9898;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="1200" height="1000"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var length2 = config.length;
+      var framez = new Array(length2);
+      for(var i = 0, j = 0, sum = 0; i < length2; i++, sum++) {
+          j = j || config[i].num;
+          
+          framez[i] = new Image();
+          framez[i].onload = (function(x,s) {
+                                  return function() {
+                                            
+                                            context.drawImage(framez[x], 10+s%10*100, 10+(s/10|0)*100,100,100);
+                                            for(var obj in config[x].objs) {
+                                                console.log(x);
+                                                context.beginPath();
+                                                context.arc(10+s%10*100+config[x].objs[obj].point.x,10+(s/10|0)*100+config[x].objs[obj].point.y, 4, 0, 2 * Math.PI, false);
+                                                context.fillStyle = '#000000';
+                                                context.fill();
+                                                context.lineWidth = 2;
+                                                context.strokeStyle = '#ffff00';
+                                                context.stroke();
+                                            }
+                                  };
+                              })(i,sum);
+          framez[i].src = config[i].url;
+          j=j-1;
+          if(j > 0) --i;
+      }
+      //for(i in config) console.log(config[i].url +"  "+ config[i].num  +"  "+ config[i].sides.names)
+    </script>
+  </body>
 </html>
