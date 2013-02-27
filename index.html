@@ -2,22 +2,43 @@
 <html>
   <head>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-  <script src="cardConfig.json"></script>
+   <script src="cardConfig.json"></script>
     <style>
       body {
         margin: 0;
         padding: 0;
       }
-      #myCanvas {
+      #canvas {
+        position: relative;
         border: 1px solid #9C9898;
+      }
+      #field-canvas {
+        position: absolute;
+        top: 70px;
+        left: 5px;
+        border: 1px solid #9C9898;
+        background-color: #5EC3CE;
       }
     </style>
   </head>
   <body>
-    <canvas id="myCanvas" width="1200" height="1000"></canvas>
+    <canvas id="canvas" width="1200" height="650"></canvas>
+    <canvas id="field-canvas" width="1000" height="580"></canvas>    
+    <button id="button">next card</button>
+    <button id="start">start</button>
+    <script src="GameField.js"></script>
+    <script src="Game.js"></script>
     <script>
-      var canvas = document.getElementById('myCanvas');
+      var game = new Game();
+      game.init();
+      document.getElementById("button").onclick = game.nextCard;
+      document.getElementById("start").onclick = game.start;
+      //game.nextCard();
+      /*var canvas = document.getElementById('canvas');
       var context = canvas.getContext('2d');
+      var miple = new Image();
+      miple.onload = function() {};
+      miple.src = "smallmiple.png";
       var length2 = config.length;
       var framez = new Array(length2);
       for(var i = 0, j = 0, sum = 0; i < length2; i++, sum++) {
@@ -37,13 +58,14 @@
                                                 context.lineWidth = 2;
                                                 context.strokeStyle = '#ffff00';
                                                 context.stroke();
+                                                context.drawImage(miple, 10+s%10*100+config[x].objs[obj].point.x-15, 10+(s/10|0)*100+config[x].objs[obj].point.y-15,30,30);
                                             }
                                   };
                               })(i,sum);
           framez[i].src = config[i].url;
           j=j-1;
           if(j > 0) --i;
-      }
+      }*/
       //for(i in config) console.log(config[i].url +"  "+ config[i].num  +"  "+ config[i].sides.names)
     </script>
   </body>
