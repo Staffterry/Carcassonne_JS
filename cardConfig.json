@@ -1,0 +1,1036 @@
+[{
+        "url" : img/C.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 5,
+        "objs" : [
+            {
+                "type" : "C",
+                "side": [2],
+                "fors" : [2],
+                "point" : {
+                    "x" : 50,
+                    "y" : 20
+                }
+            },
+            {
+                "type" : "F",
+                "side": [1,3,4],
+                "fors" : [1],
+                "point" : {
+                    "x" : 50,
+                    "y" : 60
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["F","F","C","F"],
+            "objs" : [[2],[1],[2],[2]]
+        }                         
+    },
+    {
+        "url" : img/Cc+.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 2,
+        "objs" : [
+            {
+                "type" : "C+",
+                "side": [1,2],
+                "fors" : [2],
+                "point" : {
+                    "x" : 30,
+                    "y" : 20
+                }
+            },
+            {
+                "type" : "F",
+                "side": [3,4],
+                "fors" : [1],
+                "point" : {
+                    "x" : 70,
+                    "y" : 70
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["C","C","F","F"],
+            "objs" : [[1],[1],[2],[2]]
+        }                                  
+    },
+    {
+        "url" : img/Cc.1.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 3,
+        "objs" : [
+            {
+                "type" : "C",
+                "side": [1,2],
+                "fors" : [2],
+                "point" : {
+                    "x" : 30,
+                    "y" : 20
+                }
+            },
+            {
+                "type" : "F",
+                "side": [3,4],
+                "fors" : [1],
+                "point" : {
+                    "x" : 70,
+                    "y" : 70
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["C","C","F","F"],
+            "objs" : [[1],[1],[2],[2]]
+        }                           
+    },
+    {
+        "url" : img/CC.2.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 2,
+        "objs" : [
+            {
+                "type" : "C",
+                "side": [1],
+                "fors" : [3],
+                "point" : {
+                    "x" : 5,
+                    "y" : 50
+                }
+            },
+            {
+                "type" : "C",
+                "side": [2],
+                "fors" : [3],
+                "point" : {
+                    "x" : 50,
+                    "y" : 10
+                }
+            },
+            {
+                "type" : "F",
+                "side": [3,4],
+                "fors" : [1,2],
+                "point" : {
+                    "x" : 50,
+                    "y" : 60
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["C","C","F","F"],
+            "objs" : [[1],[2],[3],[3]]
+        }                        
+    },
+    {
+        "url" : img/Ccc.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 3,
+        "objs" : [
+            {
+                "type" : "C",
+                "side": [1,2,3],
+                "fors" : [2],
+                "point" : {
+                    "x" : 50,
+                    "y" : 30
+                }
+            },
+            {
+                "type" : "F",
+                "side": [4],
+                "fors" : [1],
+                "point" : {
+                    "x" : 50,
+                    "y" : 85
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["C","C","C","F"],
+            "objs" : [[1],[1],[1],[2]]
+        }                             
+    },
+    {
+        "url" : img/Cccc+.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 1,
+        "objs" : [
+            {
+                "type" : "C+",
+                "side": [1,2,3,4],
+                "fors" : [2],
+                "point" : {
+                    "x" : 50,
+                    "y" : 50
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["C","C","C","C"],
+            "objs" : [[1],[1],[1],[1]]
+        }                           
+    },
+    {
+        "url" : img/Ccc+.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 1,
+        "objs" : [
+            {
+                "type" : "C+",
+                "side": [1,2,3],
+                "fors" : [2],
+                "point" : {
+                    "x" : 50,
+                    "y" : 30
+                }
+            },
+            {
+                "type" : "F",
+                "side": [4],
+                "fors" : [1],
+                "point" : {
+                    "x" : 50,
+                    "y" : 85
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["C","C","C","F"],
+            "objs" : [[1],[1],[1],[2]]
+        }                             
+    },
+    {
+        "url" : img/CccR.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 1,
+        "objs" : [
+            {
+                "type" : "C",
+                "side": [1,2,3],
+                "fors" : [2],
+                "point" : {
+                    "x" : 50,
+                    "y" : 30
+                }
+            },
+            {
+                "type" : "F",
+                "side": [4],
+                "fors" : [1,3],
+                "point" : {
+                    "x" : 70,
+                    "y" : 90
+                }
+            },
+            {
+                "type" : "R",
+                "side": [4],
+                "fors" : [1,2,3],
+                "point" : {
+                    "x" : 50,
+                    "y" : 90
+                }
+            },
+            {
+                "type" : "F",
+                "side": [4],
+                "fors" : [1,3],
+                "point" : {
+                    "x" : 30,
+                    "y" : 90
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["C","C","C","FRF"],
+            "objs" : [[1],[1],[1],[2,3,4]]
+        }                             
+    },
+    {
+        "url" : img/CccR+.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 2,
+        "objs" : [
+            {
+                "type" : "C+",
+                "side": [1,2,3],
+                "fors" : [2],
+                "point" : {
+                    "x" : 50,
+                    "y" : 30
+                }
+            },
+            {
+                "type" : "F",
+                "side": [4],
+                "fors" : [1,3],
+                "point" : {
+                    "x" : 70,
+                    "y" : 90
+                }
+            },
+            {
+                "type" : "R",
+                "side": [4],
+                "fors" : [1,2,3],
+                "point" : {
+                    "x" : 50,
+                    "y" : 90
+                }
+            },
+            {
+                "type" : "F",
+                "side": [4],
+                "fors" : [1,3],
+                "point" : {
+                    "x" : 30,
+                    "y" : 90
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["C","C","C","FRF"],
+            "objs" : [[1],[1],[1],[2,3,4]]
+        }                             
+    },
+    {
+        "url" : img/CcRr.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 3,
+        "objs" : [
+            {
+                "type" : "C",
+                "side": [1,2],
+                "fors" : [2],
+                "point" : {
+                    "x" : 30,
+                    "y" : 20
+                }
+            },
+            {
+                "type" : "F",
+                "side": [3,4],
+                "fors" : [1,3],
+                "point" : {
+                    "x" : 50,
+                    "y" : 60
+                }
+            },
+             {
+                "type" : "R",
+                "side": [3,4],
+                "fors" : [2,4],
+                "point" : {
+                    "x" : 70,
+                    "y" : 70
+                }
+            },
+             {
+                "type" : "F",
+                "side": [3,4],
+                "fors" : [3],
+                "point" : {
+                    "x" : 85,
+                    "y" : 85
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["C","C","FRF","FRF"],
+            "objs" : [[1],[1],[2,3,4],[4,3,2]]
+        }                                  
+    },
+    {
+        "url" : img/CcRr+.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 2,
+        "objs" : [
+            {
+                "type" : "C+",
+                "side": [1,2],
+                "fors" : [2],
+                "point" : {
+                    "x" : 30,
+                    "y" : 20
+                }
+            },
+            {
+                "type" : "F",
+                "side": [3,4],
+                "fors" : [1,3],
+                "point" : {
+                    "x" : 50,
+                    "y" : 60
+                }
+            },
+             {
+                "type" : "R",
+                "side": [3,4],
+                "fors" : [2,4],
+                "point" : {
+                    "x" : 70,
+                    "y" : 70
+                }
+            },
+             {
+                "type" : "F",
+                "side": [3,4],
+                "fors" : [3],
+                "point" : {
+                    "x" : 85,
+                    "y" : 85
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["C","C","FRF","FRF"],
+            "objs" : [[1],[1],[2,3,4],[4,3,2]]
+        }                                  
+    },
+    {
+        "url" : img/CFc.1.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 1,
+        "objs" : [
+            {
+                "type" : "C",
+                "side": [1,3],
+                "fors" : [2,3],
+                "point" : {
+                    "x" : 50,
+                    "y" : 10
+                }
+            },
+            {
+                "type" : "F",
+                "side": [2],
+                "fors" : [1],
+                "point" : {
+                    "x" : 50,
+                    "y" : 50
+                }
+            },
+            {
+                "type" : "F",
+                "side": [4],
+                "fors" : [1],
+                "point" : {
+                    "x" : 50,
+                    "y" : 90
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["C","F","C","F"],
+            "objs" : [[1],[2],[1],[3]]
+        }                                  
+    },
+    {
+        "url" : img/CFc+.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 2,
+        "objs" : [
+            {
+                "type" : "C+",
+                "side": [1,3],
+                "fors" : [2,3],
+                "point" : {
+                    "x" : 50,
+                    "y" : 10
+                }
+            },
+            {
+                "type" : "F",
+                "side": [2],
+                "fors" : [1],
+                "point" : {
+                    "x" : 50,
+                    "y" : 50
+                }
+            },
+            {
+                "type" : "F",
+                "side": [4],
+                "fors" : [1],
+                "point" : {
+                    "x" : 50,
+                    "y" : 90
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["C","F","C","F"],
+            "objs" : [[1],[2],[1],[3]]
+        }                                  
+    },
+    {
+        "url" : img/CFC.2.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 3,
+        "objs" : [
+            {
+                "type" : "F",
+                "side": [1,3],
+                "fors" : [2,3],
+                "point" : {
+                    "x" : 50,
+                    "y" : 50
+                }
+            },
+            {
+                "type" : "C",
+                "side": [2],
+                "fors" : [1],
+                "point" : {
+                    "x" : 50,
+                    "y" : 15
+                }
+            },
+            {
+                "type" : "C",
+                "side": [4],
+                "fors" : [1],
+                "point" : {
+                    "x" : 50,
+                    "y" : 85
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["F","C","F","C"],
+            "objs" : [[1],[2],[1],[3]]
+        }                                  
+    },
+    {
+        "url" : img/CRr.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 3,
+        "objs" : [
+            {
+                "type" : "F",
+                "side": [1,3,4],
+                "fors" : [2,3],
+                "point" : {
+                    "x" : 25,
+                    "y" : 60
+                }
+            },
+            {
+                "type" : "C",
+                "side": [2],
+                "fors" : [1],
+                "point" : {
+                    "x" : 50,
+                    "y" : 15
+                }
+            },
+            {
+                "type" : "R",
+                "side": [3,4],
+                "fors" : [1,4],
+                "point" : {
+                    "x" : 60,
+                    "y" : 60
+                }
+            },
+            {
+                "type" : "F",
+                "side": [3,4],
+                "fors" : [3],
+                "point" : {
+                    "x" : 80,
+                    "y" : 80
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["F","C","FRF","FRF"],
+            "objs" : [[1],[2],[1,3,4],[4,3,1]]
+        }                                  
+    },
+    {
+        "url" : img/RrC.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 2,
+        "objs" : [
+            {
+                "type" : "F",
+                "side": [1,4],
+                "fors" : [2],
+                "point" : {
+                    "x" : 20,
+                    "y" : 80
+                }
+            },
+            {
+                "type" : "R",
+                "side": [1,4],
+                "fors" : [1,3],
+                "point" : {
+                    "x" : 40,
+                    "y" : 60
+                }
+            },
+            {
+                "type" : "F",
+                "side": [1,3,4],
+                "fors" : [2,4],
+                "point" : {
+                    "x" : 75,
+                    "y" : 60
+                }
+            },
+            {
+                "type" : "C",
+                "side": [2],
+                "fors" : [3],
+                "point" : {
+                    "x" : 50,
+                    "y" : 15
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["FRF","C","F","FRF"],
+            "objs" : [[1,2,3],[4],[3],[3,2,1]]
+        }                                  
+    },
+    {
+        "url" : img/CRRR.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 3,
+        "objs" : [
+            {
+                "type" : "F",
+                "side": [1,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 20,
+                    "y" : 80
+                }
+            },
+            {
+                "type" : "R",
+                "side": [1],
+                "fors" : [5,7],
+                "point" : {
+                    "x" : 20,
+                    "y" : 50
+                }
+            },
+            {
+                "type" : "F",
+                "side": [1,3],
+                "fors" : [2],
+                "point" : {
+                    "x" : 50,
+                    "y" : 45
+                }
+            },
+            {
+                "type" : "C",
+                "side": [2],
+                "fors" : [],
+                "point" : {
+                    "x" : 50,
+                    "y" : 15
+                }
+            },
+            {
+                "type" : "R",
+                "side": [3],
+                "fors" : [2,7],
+                "point" : {
+                    "x" : 60,
+                    "y" : 70
+                }
+            },
+            {
+                "type" : "F",
+                "side": [3,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 80,
+                    "y" : 80
+                }
+            },
+            {
+                "type" : "R",
+                "side": [4],
+                "fors" : [2,5],
+                "point" : {
+                    "x" : 50,
+                    "y" : 85
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["FRF","C","FRF","FRF"],
+            "objs" : [[1,2,3],[4],[3,5,6],[6,7,1]]
+        }                                  
+    },
+    {
+        "url" : img/RCr.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 2,
+        "objs" : [
+            {
+                "type" : "F",
+                "side": [1,3,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 50,
+                    "y" : 80
+                }
+            },
+            {
+                "type" : "R",
+                "side": [1,3],
+                "fors" : [],
+                "point" : {
+                    "x" : 50,
+                    "y" : 50
+                }
+            },
+            {
+                "type" : "F",
+                "side": [1,3],
+                "fors" : [4],
+                "point" : {
+                    "x" : 15,
+                    "y" : 30
+                }
+            },
+            {
+                "type" : "C",
+                "side": [2],
+                "fors" : [],
+                "point" : {
+                    "x" : 50,
+                    "y" : 15
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["FRF","C","FRF","F"],
+            "objs" : [[1,2,3],[4],[3,2,1],[1]]
+        }                                  
+    },
+    {
+        "url" : img/RFr.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 7,
+        "objs" : [
+            {
+                "type" : "F",
+                "side": [1,3,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 50,
+                    "y" : 80
+                }
+            },
+            {
+                "type" : "R",
+                "side": [1,3],
+                "fors" : [],
+                "point" : {
+                    "x" : 50,
+                    "y" : 50
+                }
+            },
+            {
+                "type" : "F",
+                "side": [1,2,3],
+                "fors" : [],
+                "point" : {
+                    "x" : 50,
+                    "y" : 20
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["FRF","F","FRF","F"],
+            "objs" : [[1,2,3],[3],[3,2,1],[1]]
+        }                                  
+    },
+    {
+        "url" : img/Rr.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 10,
+        "objs" : [
+            {
+                "type" : "F",
+                "side": [1,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 20,
+                    "y" : 80
+                }
+            },
+            {
+                "type" : "R",
+                "side": [1,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 45,
+                    "y" : 55
+                }
+            },
+            {
+                "type" : "F",
+                "side": [1,2,3,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 70,
+                    "y" : 30
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["FRF","F","F","FRF"],
+            "objs" : [[1,2,3],[3],[3],[3,2,1]]
+        }                                  
+    },
+    {
+        "url" : img/RRR.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 4,
+        "objs" : [
+            {
+                "type" : "F",
+                "side": [1,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 20,
+                    "y" : 80
+                }
+            },
+            {
+                "type" : "R",
+                "side": [1],
+                "fors" : [4,6],
+                "point" : {
+                    "x" : 20,
+                    "y" : 50
+                }
+            },
+            {
+                "type" : "F",
+                "side": [1,2,3],
+                "fors" : [],
+                "point" : {
+                    "x" : 50,
+                    "y" : 20
+                }
+            },
+            {
+                "type" : "R",
+                "side": [3],
+                "fors" : [2,6],
+                "point" : {
+                    "x" : 90,
+                    "y" : 50
+                }
+            },
+            {
+                "type" : "F",
+                "side": [3,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 80,
+                    "y" : 80
+                }
+            },
+            {
+                "type" : "R",
+                "side": [4],
+                "fors" : [2,4],
+                "point" : {
+                    "x" : 50,
+                    "y" : 80
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["FRF","F","FRF","FRF"],
+            "objs" : [[1,2,3],[3],[3,4,5],[5,6,1]]
+        }                                  
+    },
+    {
+        "url" : img/RRRR.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 2,
+        "objs" : [
+            {
+                "type" : "F",
+                "side": [1,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 20,
+                    "y" : 80
+                }
+            },
+            {
+                "type" : "R",
+                "side": [1],
+                "fors" : [4,6,8],
+                "point" : {
+                    "x" : 20,
+                    "y" : 50
+                }
+            },
+            {
+                "type" : "F",
+                "side": [1,2],
+                "fors" : [],
+                "point" : {
+                    "x" : 20,
+                    "y" : 20
+                }
+            },
+            {
+                "type" : "R",
+                "side": [2],
+                "fors" : [2,6,8],
+                "point" : {
+                    "x" : 50,
+                    "y" : 20
+                }
+            },
+            {
+                "type" : "F",
+                "side": [2,3],
+                "fors" : [],
+                "point" : {
+                    "x" : 80,
+                    "y" : 20
+                }
+            },
+            {
+                "type" : "R",
+                "side": [3],
+                "fors" : [2,4,8],
+                "point" : {
+                    "x" : 80,
+                    "y" : 60
+                }
+            },
+            {
+                "type" : "F",
+                "side": [3,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 80,
+                    "y" : 85
+                }
+            },
+            {
+                "type" : "R",
+                "side": [4],
+                "fors" : [2,4,6],
+                "point" : {
+                    "x" : 50,
+                    "y" : 80
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["FRF","FRF","FRF","FRF"],
+            "objs" : [[1,2,3],[3,4,5],[5,6,7],[7,8,1]]
+        }                                  
+    },
+    {
+        "url" : img/LR.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 3,
+        "objs" : [
+            {
+                "type" : "F",
+                "side": [1,2,3,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 20,
+                    "y" : 20
+                }
+            },
+            {
+                "type" : "R",
+                "side": [4],
+                "fors" : [3],
+                "point" : {
+                    "x" : 50,
+                    "y" : 85
+                }
+            },
+            {
+                "type" : "M",
+                "side": [],
+                "fors" : [2],
+                "point" : {
+                    "x" : 50,
+                    "y" : 50
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["F","F","F","FRF"],
+            "objs" : [[1],[1],[1],[1,2,1]]
+        }                                  
+    },
+    {
+        "url" : img/L.jpg,
+        "height" : 100,
+        "width" : 100,
+        "num" : 4,
+        "objs" : [
+            {
+                "type" : "F",
+                "side": [1,2,3,4],
+                "fors" : [],
+                "point" : {
+                    "x" : 80,
+                    "y" : 80
+                }
+            },
+            {
+                "type" : "M",
+                "side": [],
+                "fors" : [],
+                "point" : {
+                    "x" : 50,
+                    "y" : 50
+                }
+            }
+        ],
+        "sides" : {
+            "names" : ["F","F","F","F"],
+            "objs" : [[1],[1],[1],[1]]
+        }                                  
+    }
+]
