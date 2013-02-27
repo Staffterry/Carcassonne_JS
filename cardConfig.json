@@ -1,5 +1,5 @@
-[{
-        "url" : img/C.jpg,
+var config = [{
+        "url" : "img/C.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 5,
@@ -29,7 +29,7 @@
         }                         
     },
     {
-        "url" : img/Cc+.jpg,
+        "url" : "img/Cc+.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 2,
@@ -59,7 +59,7 @@
         }                                  
     },
     {
-        "url" : img/Cc.1.jpg,
+        "url" : "img/Cc.1.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 3,
@@ -89,7 +89,7 @@
         }                           
     },
     {
-        "url" : img/CC.2.jpg,
+        "url" : "img/CC.2.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 2,
@@ -128,7 +128,7 @@
         }                        
     },
     {
-        "url" : img/Ccc.jpg,
+        "url" : "img/Ccc.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 3,
@@ -158,7 +158,7 @@
         }                             
     },
     {
-        "url" : img/Cccc+.jpg,
+        "url" : "img/Cccc+.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 1,
@@ -179,7 +179,7 @@
         }                           
     },
     {
-        "url" : img/Ccc+.jpg,
+        "url" : "img/Ccc+.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 1,
@@ -209,7 +209,7 @@
         }                             
     },
     {
-        "url" : img/CccR.jpg,
+        "url" : "img/CccR.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 1,
@@ -257,7 +257,7 @@
         }                             
     },
     {
-        "url" : img/CccR+.jpg,
+        "url" : "img/CccR+.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 2,
@@ -305,7 +305,7 @@
         }                             
     },
     {
-        "url" : img/CcRr.jpg,
+        "url" : "img/CcRr.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 3,
@@ -353,7 +353,7 @@
         }                                  
     },
     {
-        "url" : img/CcRr+.jpg,
+        "url" : "img/CcRr+.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 2,
@@ -401,7 +401,7 @@
         }                                  
     },
     {
-        "url" : img/CFc.1.jpg,
+        "url" : "img/CFc.1.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 1,
@@ -440,7 +440,7 @@
         }                                  
     },
     {
-        "url" : img/CFc+.jpg,
+        "url" : "img/CFc+.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 2,
@@ -479,7 +479,7 @@
         }                                  
     },
     {
-        "url" : img/CFC.2.jpg,
+        "url" : "img/CFC.2.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 3,
@@ -518,7 +518,7 @@
         }                                  
     },
     {
-        "url" : img/CRr.jpg,
+        "url" : "img/CRr.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 3,
@@ -566,7 +566,7 @@
         }                                  
     },
     {
-        "url" : img/RrC.jpg,
+        "url" : "img/RrC.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 2,
@@ -614,7 +614,7 @@
         }                                  
     },
     {
-        "url" : img/CRRR.jpg,
+        "url" : "img/CRRR.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 3,
@@ -660,8 +660,8 @@
                 "side": [3],
                 "fors" : [2,7],
                 "point" : {
-                    "x" : 60,
-                    "y" : 70
+                    "x" : 80,
+                    "y" : 60
                 }
             },
             {
@@ -689,7 +689,7 @@
         }                                  
     },
     {
-        "url" : img/RCr.jpg,
+        "url" : "img/RCr.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 2,
@@ -737,7 +737,7 @@
         }                                  
     },
     {
-        "url" : img/RFr.jpg,
+        "url" : "img/RFr.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 7,
@@ -776,7 +776,7 @@
         }                                  
     },
     {
-        "url" : img/Rr.jpg,
+        "url" : "img/Rr.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 10,
@@ -815,7 +815,7 @@
         }                                  
     },
     {
-        "url" : img/RRR.jpg,
+        "url" : "img/RRR.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 4,
@@ -881,7 +881,7 @@
         }                                  
     },
     {
-        "url" : img/RRRR.jpg,
+        "url" : "img/RRRR.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 2,
@@ -965,7 +965,7 @@
         }                                  
     },
     {
-        "url" : img/LR.jpg,
+        "url" : "img/LR.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 3,
@@ -1004,7 +1004,7 @@
         }                                  
     },
     {
-        "url" : img/L.jpg,
+        "url" : "img/L.jpg",
         "height" : 100,
         "width" : 100,
         "num" : 4,
@@ -1033,4 +1033,4 @@
             "objs" : [[1],[1],[1],[1]]
         }                                  
     }
-]
+];
