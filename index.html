@@ -23,20 +23,21 @@
       }
       #field-canvas {
         position: relative;
-        /*top: -2610px;
-        left: -4500px;
-        border: 1px solid #9C9898;*/
+        top: -2610px;
+        left: -2000px;
+        /*border: 1px solid #9C9898;*/
         background-color: #5EC3CE;      
       }
     </style>
   </head>
   <body>
     <canvas id="canvas" width="1200" height="650"></canvas>
-    <div id="field-wrapper"><canvas id="field-canvas" width="1000" height="580"></canvas>   </div> 
+    <div id="field-wrapper"><canvas id="field-canvas" width="5000" height="5800"></canvas>   </div> 
     <button id="button">next card</button>
     <button id="start">start</button>
     <script src="GameField.js"></script>
     <script src="Game.js"></script>
+    <script src="Types.js"></script>
     <script>
       var game = new Game();
       game.init();
