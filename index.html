@@ -28,6 +28,19 @@
         /*border: 1px solid #9C9898;*/
         background-color: #5EC3CE;      
       }
+      #table {
+        position: absolute; 
+        background-color: #cccccc;
+        top: 300px;
+        left: 1010px;
+        border: 1px solid black;
+        text-align: left;
+      }
+      #table td {
+          border: 1px black solid;
+          background-color: #ffffff;
+          /*border-collapse: collapse;*/
+      }
     </style>
   </head>
   <body>
@@ -35,11 +48,23 @@
     <div id="field-wrapper"><canvas id="field-canvas" width="5000" height="5800"></canvas>   </div> 
     <button id="button">next card</button>
     <button id="start">start</button>
+    <table id="table">
+        <tr><th>Тип</th><th>Количество</th></tr>
+        <tr><td>Города</td><td class="value"></td></tr>
+        <tr><td>Поля</td><td class="value"></td></tr>
+        <tr><td>Дороги</td><td class="value"></td></tr>
+        <tr><td>Монастыри</td><td class="value"></td></tr>
+    </table>        
     <script src="GameField.js"></script>
     <script src="Game.js"></script>
     <script src="Types.js"></script>
     <script>
       var game = new Game();
+      var table = document.getElementById("table");
+      var cityMonitor = table.rows[1].cells[1];
+      var fieldMonitor = table.rows[2].cells[1];
+      var roadMonitor = table.rows[3].cells[1];
+      var monkMonitor = table.rows[4].cells[1];
       game.init();
       document.getElementById("button").onclick = game.nextCard;
       document.getElementById("start").onclick = function() {
