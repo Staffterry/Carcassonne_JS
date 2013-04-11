@@ -16,7 +16,7 @@
         position: absolute;
         height: 580px;
         width: 1000px;
-        top: 70px;
+        top: 60px;
         left: 5px; 
         border: 1px solid #9C9898;
         overflow: hidden;
@@ -41,10 +41,15 @@
           background-color: #ffffff;
           /*border-collapse: collapse;*/
       }
+      #button, #start {
+          position: relative;
+          top: -10px;
+          left: -170px;
+      }
     </style>
   </head>
   <body>
-    <canvas id="canvas" width="1200" height="650"></canvas>
+    <canvas id="canvas" width="1200" height="640"></canvas>
     <div id="field-wrapper"><canvas id="field-canvas" width="5000" height="5800"></canvas>   </div> 
     <button id="button">next card</button>
     <button id="start">start</button>
@@ -70,7 +75,7 @@
       document.getElementById("start").onclick = function() {
           game.start();
           document.getElementById("start").disabled = 'disabled';
-      }
+      };
       //game.nextCard();
       /*var canvas = document.getElementById('canvas');
       var context = canvas.getContext('2d');

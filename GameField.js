@@ -10,10 +10,14 @@ function GameField(canvas) {
             R: [],
             F: [],
             M: []
-        },
-        cardTable = {},
-        directions = [[-1,0],[0,-1],[1,0],[0,1]],
-        fieldContext = canvas.getContext('2d');
+        },                                            //объект хранит все типы игры
+        cardTable = {},                               //карточное поле
+        directions = [[-1,0],[0,-1],[1,0],[0,1]],     //возможные направления обхода
+        fieldContext = canvas.getContext('2d'),
+        currentCard,
+        copiedCanvas,
+        currentScale,
+        self = this;       
     
     /**
     * драг ын дроп игрового поля.
@@ -40,23 +44,51 @@ function GameField(canvas) {
         };
         return false;
     };
-    /*canvas.onclick = resizeCanvas;
     
-    function resizeCanvas() {
-        var oldImg = fieldContext.getImageData(0, 0, canvas.width, canvas.height);
-        fieldContext.clearRect(0,0,canvas.width,canvas.height);
-        fieldContext.scale(2,2);
-        fieldContext.putImageData(oldImg, 0, 0, 0, 0, canvas.width, canvas.height);
+    canvas.onmousewheel = canvas.onwheel = resizeCanvas;
+    
+    function resizeCanvas(e) {
+        console.log('robit');
+        currentScale = currentScale || 1;
+        var delta = e.wheelDelta ? e.wheelDelta/100 : e.detail ? -e.detail : 0;
+        console.log(delta);
+        if(!copiedCanvas)  { copiedCanvas = document.createElement('canvas');
+            copiedCanvas.width = canvas.width;
+            copiedCanvas.height = canvas.height;
+            var imageData = fieldContext.getImageData(0, 0, canvas.width, canvas.height);
+            copiedCanvas.getContext("2d").putImageData(imageData, 0, 0);
+        }
+        
+        //canvas.style.zoom = canvas.style.zoom || 1;  
+       // canvas.style.zoom = 1.1;
+         
+        fieldContext.save();
+        currentScale += +(Math.pow(1.1,delta)-1).toFixed(1);
+        console.log(resizeCanvas.scale);
+        var newWidth = canvas.width * currentScale;
+        var newHeight = canvas.height * currentScale;
+        fieldContext.translate(-((newWidth-canvas.width)/2), -((newHeight-canvas.height)/2));
+        fieldContext.scale(currentScale, currentScale);
+        fieldContext.clearRect(0, 0, canvas.width, canvas.height);
+        fieldContext.drawImage(copiedCanvas, 0, 0);
+        fieldContext.restore();
+        if(currentCard) self.drawRects(currentCard);
+    }
+    
+    /*function redraw(scale) {
+        
     }*/
     
     /**
     * Показывает доступные места для карточки.
     */ 
     this.drawRects = function(card) {
+        currentCard = card;
+        var curCardSize = 100*currentScale;
         for(var square in cardTable) {
             var ij = square.split('.');
             for(var dir in directions) {
-                console.log(+ij[0]+directions[dir][0]+'.'+(+ij[1]+directions[dir][1])); 
+                //console.log(+ij[0]+directions[dir][0]+'.'+(+ij[1]+directions[dir][1])); 
                 if(cardTable[+ij[0]+directions[dir][0]+'.'+(+ij[1]+directions[dir][1])]) {
                     console.log('Not empty');
                     continue;
@@ -64,8 +96,8 @@ function GameField(canvas) {
                 if(this.checkCard(card,+ij[0]+directions[dir][0],+ij[1]+directions[dir][1])){
                    // console.log('empty and checked');
                     fieldContext.beginPath();
-                    fieldContext.rect(canvas.width/2 - card.width/2 + (+ij[0]+directions[dir][0])*card.width+1, 
-                                            canvas.height/2 - card.height/2 + (+ij[1]+directions[dir][1])*card.height+1, 98,98);
+                    fieldContext.rect(canvas.width/2 - curCardSize/2 + (+ij[0]+directions[dir][0])*curCardSize+1, 
+                                            canvas.height/2 - curCardSize/2 + (+ij[1]+directions[dir][1])*curCardSize+1, 98*currentScale,98*currentScale);
                     fieldContext.fillStyle = '#ffcccc';
                     fieldContext.fill();
                     fieldContext.lineWidth = 1;
@@ -80,6 +112,7 @@ function GameField(canvas) {
     * Очищает доступные места.
     */ 
     this.clearRects = function() {
+        var curCardSize = 100*currentScale;
         for(var square in cardTable) {
             var ij = square.split('.');
             for(var dir in directions) {
@@ -87,8 +120,8 @@ function GameField(canvas) {
                     //console.log('Not empty');
                     continue;
                 }
-                fieldContext.clearRect(canvas.width/2 - 50 + (+ij[0]+directions[dir][0])*100, 
-                                            canvas.height/2 - 50 + (+ij[1]+directions[dir][1])*100, 100, 100);
+                fieldContext.clearRect(canvas.width/2 - curCardSize/2 + (+ij[0]+directions[dir][0])*curCardSize, 
+                                            canvas.height/2 - curCardSize/2 + (+ij[1]+directions[dir][1])*curCardSize, curCardSize, curCardSize);
             }
         }
     };
@@ -104,13 +137,13 @@ function GameField(canvas) {
             for(var dir in directions) {
                 newCard[dir] = /*rot > 0 ? newCard[dir] :*/ cardTable[(i+directions[dir][0])+'.'+(j+directions[dir][1])];
                // if(!newCard[dir]) continue;
-                if(!newCard[dir]) console.log('cardTable['+(i+directions[dir][0])+'.'+(j+directions[dir][1])+'] empty square ok');
-                else {
+                //if(!newCard[dir]) console.log('cardTable['+(i+directions[dir][0])+'.'+(j+directions[dir][1])+'] empty square ok');
+                /*else {
                    // console.log('cardTable['+(i+directions[dir][0])+'.'+(j+directions[dir][1])+']');
                     //console.log('%s  %s dir= %d dir2= %d',card.sides.names[(+dir+rot)%4],newCard[dir].sides.names[(+dir+2)%4],dir,((+dir+newCard[dir].rotate)%4 + 2)%4);
                     //console.log('side 1= %d  side 2= %d',(+dir+rot)%4,((+dir+newCard[dir].rotate)%4 + 2)%4);
                    // console.log('dir= %s rot= %s стороны равны= %s',dir,rot,(card.sides.names[(+dir+rot)%4] === newCard[dir].sides.names[((+dir+newCard[dir].rotate)%4 + 2)%4]));
-                }
+                }*/
                 if(!newCard[dir] || (card.sides.names[(+dir+rot)%4] === newCard[dir].sides.names[(4+(+dir+2)%4 - newCard[dir].rotate)%4])) checked++;
                 else break;
                // console.log('checked=' +checked);
@@ -142,8 +175,8 @@ function GameField(canvas) {
         pushTypes(card);
         drawPoints(card,i,j,rotate);
         console.log("cart %d %d placed",i,j);
-        //console.dir(cardTable);
-        //console.dir(types);
+        console.dir(cardTable);
+        console.dir(types);
         showTable();
     };
     

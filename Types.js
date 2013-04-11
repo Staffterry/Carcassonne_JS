@@ -41,7 +41,7 @@ function Type() {
     this.closed = false; 
 } 
 Type.prototype.computePoints = function() {};
-Type.prototype.isClosed = function() {};
+Type.prototype.isClosed = function() {};         //проверка на закрытость
 Type.prototype.getLength = function() {};
 
 Type.factory = function(type) {
